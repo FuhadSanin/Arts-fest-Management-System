@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="registration-container">
+      <nav>
+        <a href="list.php">Register List</a>
+      </nav>
+      <div class="registration">
+        <div class="col-2">
+          <div class="form-container">
+            <h3 style="color: white" class="title">ADMIT</h3>
+            <form class="form" action="login.php" method="post">
+              <input
+                placeholder="Enter your Admission Number"
+                class="input"
+                type="text"
+                id="usn"
+                name="usn"
+                required
+              />
+              <input
+                placeholder="Enter your Fullname"
+                class="input"
+                type="text"
+                id="firstname"
+                name="firstname"
+                required
+              />
+              <input type="date" required class="input" name="dob" />
+              <input
+                placeholder="Enter your District"
+                class="input"
+                type="text"
+                id="district"
+                name="district"
+                required
+              />
+              <input
+                placeholder="Enter your Email"
+                class="input"
+                type="text"
+                id="email"
+                name="email"
+                required
+              />
+              <input
+                placeholder="Enter your Phone Number"
+                class="input"
+                type="text"
+                id="phone"
+                name="phone"
+                required
+              />
+              <input
+                placeholder="Enter your College"
+                class="input"
+                type="text"
+                id="college"
+                name="college"
+                required
+              />
+              <div class="dropdown">
+                <p for="branch">Branch</p>
+                <select name="branch" id="branch">
+                  <option value="volvo">CSE</option>
+                  <option value="saab">EEE</option>
+                  <option value="opel">EI</option>
+                  <option value="audi">EC</option>
+                </select>
+              </div>
+              <div class="events-box">
+                <p>Events</p>
+                <div class="content">
+                  <label class="container"
+                    >AOC
+                    <span class="checkmark"></span>
+                    <input type="checkbox" checked="checked" />
+                  </label>
+                  <label class="container"
+                    >DOC
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"
+                    >VOC
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <input
+                placeholder="Amount Paid"
+                class="input"
+                type="text"
+                id="phone"
+                name="phone"
+                required
+              />
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-1">
+          <spline-viewer
+            url="https://prod.spline.design/wwTP8RfuyA5baUsC/scene.splinecode"
+          ></spline-viewer>
+        </div>
+      </div>
+      <div class="cover"></div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"
+  ></script>
+</html>
